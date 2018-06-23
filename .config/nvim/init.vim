@@ -30,6 +30,7 @@ if dein#load_state('/Users/hiroaki/.cache/dein')
     call dein#add('Shougo/denite.nvim')
   endif
   call dein#add('Shougo/unite.vim')
+  call dein#add('https://github.com/freeo/vim-kalisi')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
@@ -68,7 +69,8 @@ endif
 
 " Theme
 syntax enable
-colorscheme tender
+colorscheme kalisi
+set background=light
 
 " Vim Config
 set number "行番号表示
