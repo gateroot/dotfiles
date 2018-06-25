@@ -33,6 +33,8 @@ if dein#load_state('/Users/hiroaki/.cache/dein')
   call dein#add('https://github.com/freeo/vim-kalisi')
   call dein#add('fatih/vim-go')
   call dein#add('davidhalter/jedi-vim')
+  call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
+  call dein#add('Quramy/tsuquyomi')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
