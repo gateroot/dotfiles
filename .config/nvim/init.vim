@@ -37,6 +37,7 @@ if dein#load_state('/Users/hiroaki/.cache/dein')
   call dein#add('Quramy/tsuquyomi')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('wakatime/vim-wakatime')
+  call dein#add('nathanaelkane/vim-indent-guides')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
@@ -122,3 +123,7 @@ let g:neoterm_default_mod='belowright'
 nmap s <Plug>(easymotion-s2)
 xmap s <Plug>(easymotion-s2)
 omap z <Plug>(easymotion-s2)
+
+" vim-indent-guides
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
