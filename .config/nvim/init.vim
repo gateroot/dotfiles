@@ -57,6 +57,20 @@ set cursorline "行に下線を表示
 set hlsearch "検索語をハイライト
 set mouse=a "マウス利用可能にする
 set clipboard+=unnamed "Yankしたものをクリップボードにも反映する
+set splitbelow " Horizontal split below current.
+set splitright " Vertical split to right of current.
+set tabstop=4 " Render TABs using this many spaces.
+set shiftwidth=4 " Indentation amount for < and > commands.
+if !&scrolloff
+    set scrolloff=3       " Show next 3 lines while scrolling.
+endif
+if !&sidescrolloff
+    set sidescrolloff=5   " Show next 5 columns while side-scrolling.
+endif
+let mapleader="\<SPACE>" " Map the leader key to SPACE
+set ignorecase " Make searching case insensitive
+set smartcase " ... unless the query has capital letters.
+set gdefault " Use 'g' flag by default with :s/foo/bar/.
 
 
 " [Key Bindings]---------------------------
