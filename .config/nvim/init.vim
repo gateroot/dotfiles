@@ -83,11 +83,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 
-" Move window
-nnoremap <S-j> <C-w>J
-nnoremap <S-K> <C-w>K
-nnoremap <S-L> <C-w>L
-nnoremap <S-H> <C-w>H
+" Visual mode 
+nnoremap <S-j> <S-v>j
+nnoremap <S-k> <S-v>k
+nnoremap <S-l> vl
+nnoremap <S-h> vh
 
 nnoremap sn gt
 nnoremap sp gT
