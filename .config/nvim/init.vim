@@ -76,14 +76,19 @@ set gdefault " Use 'g' flag by default with :s/foo/bar/.
 " [Key Bindings]---------------------------
 tnoremap <silent> <ESC> <C-\><C-n>
 nnoremap s <Nop>
-nnoremap sj <C-w>j
-nnoremap sk <C-w>k
-nnoremap sl <C-w>l
-nnoremap sh <C-w>h
-nnoremap sJ <C-w>J
-nnoremap sK <C-w>K
-nnoremap sL <C-w>L
-nnoremap sH <C-w>H
+
+" Move cursor between multiple windows
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+
+" Move window
+nnoremap <S-j> <C-w>J
+nnoremap <S-K> <C-w>K
+nnoremap <S-L> <C-w>L
+nnoremap <S-H> <C-w>H
+
 nnoremap sn gt
 nnoremap sp gT
 nnoremap sr <C-w>r
