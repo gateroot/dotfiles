@@ -53,7 +53,6 @@ endif
 
 
 " Theme
-syntax enable
 colorscheme kalisi
 set background=light
 
