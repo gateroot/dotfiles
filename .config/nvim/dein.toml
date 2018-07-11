@@ -9,3 +9,32 @@
 
   [[plugins]]
   repo = 'ryanoasis/vim-devicons'
+
+  [[plugins]]
+  repo = 'Shougo/denite.nvim'
+  if   = '''has('python3')'''
+
+  [[plugins]]
+  repo = 'Shougo/unite.vim'
+
+  [[plugins]]
+  repo = 'cohama/lexima.vim'
+
+  [[plugins]]
+  repo = 'tpope/vim-fugitive'
+
+  [[plugins]]
+  repo = 'leafgarland/typescript-vim'
+
+  [[plugins]]
+  repo = 'easymotion/vim-easymotion'
+  
+  [[plugins]]
+  repo = 'Shougo/vimproc.vim'
+  build = 'make'
+
+  [[plugins]]
+  repo = 'Quramy/tsuquyomi'
+
+  [[plugins]]
+  repo = 'scrooloose/nerdcommenter'

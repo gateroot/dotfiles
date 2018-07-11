@@ -12,38 +12,15 @@
 
   [[plugins]]
   repo = 'kassio/neoterm'
-  
-  [[plugins]]
-  repo = 'tpope/vim-fugitive'
 
   [[plugins]]
   repo = 'airblade/vim-gitgutter'
-
-  [[plugins]]
-  repo = 'easymotion/vim-easymotion'
-
-  [[plugins]]
-  repo = 'Shougo/denite.nvim'
-  if   = '''has('python3')'''
-
-  [[plugins]]
-  repo = 'Shougo/unite.vim'
 
   [[plugins]]
   repo = 'fatih/vim-go'
 
   [[plugins]]
   repo = 'davidhalter/jedi-vim'
-
-  [[plugins]]
-  repo = 'Shougo/vimproc.vim'
-  build = 'make'
-
-  [[plugins]]
-  repo = 'Quramy/tsuquyomi'
-
-  [[plugins]]
-  repo = 'leafgarland/typescript-vim'
 
   [[plugins]]
   repo = 'wakatime/vim-wakatime'
