@@ -11,9 +11,6 @@
   repo = 'jacoborus/tender.vim'
 
   [[plugins]]
-  repo = 'kassio/neoterm'
-
-  [[plugins]]
   repo = 'airblade/vim-gitgutter'
 
   [[plugins]]

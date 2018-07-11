@@ -38,3 +38,6 @@
 
   [[plugins]]
   repo = 'scrooloose/nerdcommenter'
+
+  [[plugins]]
+  repo = 'kassio/neoterm'
