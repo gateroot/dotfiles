@@ -58,7 +58,7 @@ set mouse=a "マウス利用可能にする
 set clipboard+=unnamed "Yankしたものをクリップボードにも反映する
 
 
-" Key Binding
+" [Key Bindings]---------------------------
 tnoremap <silent> <ESC> <C-\><C-n>
 nnoremap s <Nop>
 nnoremap sj <C-w>j
@@ -87,15 +87,20 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
-
-" Neoterm
-let g:neoterm_default_mod='belowright'
-
-
 " EasyMotion
 nmap s <Plug>(easymotion-s2)
 xmap s <Plug>(easymotion-s2)
 omap z <Plug>(easymotion-s2)
+
+" The NERD Tree
+map <C-n> :NERDTreeToggle<CR>
+
+" End [Key Bindings]-----------------------
+
+" [Plugin Configs]-------------------------
+
+" Neoterm
+let g:neoterm_default_mod='belowright'
 
 
 " vim-indent-guides
@@ -106,8 +111,9 @@ let g:indent_guides_guide_size = 1
 " The NERD Tree
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-map <C-n> :NERDTreeToggle<CR>
 
 
 "Indent Guide
 let g:indent_guides_enable_on_vim_startup = 1
+
+" End [Plugin Configs]---------------------
