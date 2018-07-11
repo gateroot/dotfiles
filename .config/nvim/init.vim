@@ -43,6 +43,7 @@ endif
 colorscheme kalisi
 set background=light
 
+
 " If you have vim >=8.0 or Neovim >= 0.1.5
 if (has("termguicolors"))
  set termguicolors
@@ -97,21 +98,19 @@ map <C-n> :NERDTreeToggle<CR>
 
 " End [Key Bindings]-----------------------
 
+
 " [Plugin Configs]-------------------------
 
 " Neoterm
 let g:neoterm_default_mod='belowright'
 
-
 " vim-indent-guides
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
-
 " The NERD Tree
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-
 
 "Indent Guide
 let g:indent_guides_enable_on_vim_startup = 1
