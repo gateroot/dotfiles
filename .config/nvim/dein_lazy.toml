@@ -5,22 +5,13 @@
   repo = 'Shougo/neosnippet-snippets'
 
   [[plugins]]
-  repo = 'nathanaelkane/vim-indent-guides'
-  
-  [[plugins]]
-  repo = 'jacoborus/tender.vim'
-
-  [[plugins]]
-  repo = 'airblade/vim-gitgutter'
-
-  [[plugins]]
   repo = 'fatih/vim-go'
-
-  [[plugins]]
-  repo = 'davidhalter/jedi-vim'
 
   [[plugins]]
   repo = 'wakatime/vim-wakatime'
 
   [[plugins]]
-  repo = 'nathanaelkane/vim-indent-guides'
+  repo = 'jacoborus/tender.vim'
+
+  [[plugins]]
+  repo = 'davidhalter/jedi-vim'

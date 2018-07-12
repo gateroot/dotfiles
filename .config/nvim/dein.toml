@@ -48,3 +48,9 @@
 
   [[plugins]]
   repo = 'w0rp/ale'
+
+  [[plugins]]
+  repo = 'airblade/vim-gitgutter'
+
+  [[plugins]]
+  repo = 'nathanaelkane/vim-indent-guides'
