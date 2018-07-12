@@ -118,13 +118,13 @@ nmap <Leader>f <Plug>(easymotion-s2)
 xmap <Leader>f <Plug>(easymotion-s2)
 
 " The NERD Tree
-map <C-n> :NERDTreeToggle<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " Search and Replace
 nmap <Leader>s :%s//g<Left><Left>
 
 " Neoterm
-nnoremap <Leader>t :Tnew<CR><C-w>ji
+nnoremap <silent> <Leader>t :Tnew<CR><C-w>ji
 
 " End [Key Bindings]-----------------------
 
