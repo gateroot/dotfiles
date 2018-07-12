@@ -74,6 +74,10 @@ set gdefault " Use 'g' flag by default with :s/foo/bar/.
 
 
 " [Key Bindings]---------------------------
+
+" semicolon to colon
+nnoremap ; :
+
 tnoremap <silent> <ESC> <C-\><C-n>
 nnoremap s <Nop>
 
