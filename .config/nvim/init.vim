@@ -71,6 +71,8 @@ let mapleader="\<SPACE>" " Map the leader key to SPACE
 set ignorecase " Make searching case insensitive
 set smartcase " ... unless the query has capital letters.
 set gdefault " Use 'g' flag by default with :s/foo/bar/.
+" Map the leader key to SPACE
+let mapleader="\<SPACE>"
 
 
 " [Key Bindings]---------------------------
@@ -112,12 +114,17 @@ nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
 " EasyMotion
-nmap s <Plug>(easymotion-s2)
-xmap s <Plug>(easymotion-s2)
-omap z <Plug>(easymotion-s2)
+nmap <Leader>f <Plug>(easymotion-s2)
+xmap <Leader>f <Plug>(easymotion-s2)
 
 " The NERD Tree
 map <C-n> :NERDTreeToggle<CR>
+
+" Search and Replace
+nmap <Leader>s :%s//g<Left><Left>
+
+" Neoterm
+nnoremap <Leader>t :Tnew<CR><C-w>ji
 
 " End [Key Bindings]-----------------------
 
