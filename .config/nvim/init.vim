@@ -42,6 +42,14 @@ endif
 " Theme
 colorscheme kalisi
 set background=light
+let g:ale_sign_warning = '▲'
+let g:ale_sign_error = '✗'
+highlight ALEWarningSign guifg=#FFFF66
+highlight ALEErrorSign guifg=#FF6666
+let g:gitgutter_sign_added = '∙'
+let g:gitgutter_sign_modified = '∙'
+let g:gitgutter_sign_removed = '∙'
+let g:gitgutter_sign_modified_removed = '∙'
 
 
 " If you have vim >=8.0 or Neovim >= 0.1.5
