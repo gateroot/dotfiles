@@ -41,16 +41,20 @@ endif
 
 " Theme
 colorscheme kalisi
-set background=light
+set background=dark
 highlight Normal guibg=none
 highlight NonText guibg=none
 highlight LineNr guibg=none
 highlight Folded guibg=none
 highlight EndOfBuffer guibg=none
+
+" ALE
 let g:ale_sign_warning = '▲'
 let g:ale_sign_error = '✗'
 highlight ALEWarningSign guifg=#FFFF66
 highlight ALEErrorSign guifg=#FF6666
+
+" GitGutter
 let g:gitgutter_sign_added = '∙'
 let g:gitgutter_sign_modified = '∙'
 let g:gitgutter_sign_removed = '∙'
