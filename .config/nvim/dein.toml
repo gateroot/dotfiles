@@ -54,3 +54,27 @@
 
   [[plugins]]
   repo = 'nathanaelkane/vim-indent-guides'
+
+  [[plugins]]
+  repo = 'Chiel92/vim-autoformat'
+
+  [[plugins]]
+  repo = 'Shougo/neosnippet.vim'
+
+  [[plugins]]
+  repo = 'Shougo/neosnippet-snippets'
+
+  [[plugins]]
+  repo = 'fatih/vim-go'
+
+  [[plugins]]
+  repo = 'wakatime/vim-wakatime'
+
+  [[plugins]]
+  repo = 'jacoborus/tender.vim'
+
+  [[plugins]]
+  repo = 'davidhalter/jedi-vim'
+
+  [[plugins]]
+  repo = 'zchee/deoplete-jedi'
