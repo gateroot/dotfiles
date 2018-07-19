@@ -2,9 +2,6 @@
   repo = 'scrooloose/nerdtree'
 
   [[plugins]]
-  repo = 'vim-airline/vim-airline'
-
-  [[plugins]]
   repo = 'https://github.com/freeo/vim-kalisi'
 
   [[plugins]]
@@ -80,7 +77,6 @@
   repo = 'zchee/deoplete-jedi'
 
   [[plugins]]
-  repo = 'vim-airline/vim-airline-themes'
 
   [[plugins]]
   repo = 'tiagofumo/vim-nerdtree-syntax-highlight'
