@@ -102,6 +102,9 @@ let mapleader="\<SPACE>"
 
 " [Key Bindings]---------------------------
 
+" no highlight
+nnoremap <ESC><ESC> :noh<CR>
+
 " semicolon to colon
 nnoremap ; :
 
