@@ -86,6 +86,9 @@ set splitbelow " Horizontal split below current.
 set splitright " Vertical split to right of current.
 set tabstop=4 " Render TABs using this many spaces.
 set shiftwidth=4 " Indentation amount for < and > commands.
+set expandtab
+set autoindent
+set smartindent
 if !&scrolloff
     set scrolloff=3       " Show next 3 lines while scrolling.
 endif
