@@ -78,3 +78,6 @@
 
   [[plugins]]
   repo = 'zchee/deoplete-jedi'
+
+  [[plugins]]
+  repo = 'vim-airline/vim-airline-themes'
