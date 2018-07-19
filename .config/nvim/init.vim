@@ -65,6 +65,9 @@ let g:gitgutter_sign_modified_removed = '∙'
 " Airline
 let g:airline_theme = 'papercolor'
 
+" devIcon
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+
 
 " If you have vim >=8.0 or Neovim >= 0.1.5
 if (has("termguicolors"))
