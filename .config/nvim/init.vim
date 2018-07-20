@@ -47,14 +47,11 @@ highlight NonText guibg=none
 highlight LineNr guibg=none
 highlight Folded guibg=none
 highlight EndOfBuffer guibg=none
+highlight Error gui=bold
 
 " ALE
-let g:ale_sign_warning = '▲'
-let g:ale_sign_error = '✗'
-highlight ALEWarningSign guifg=#FFFF66
-highlight ALEErrorSign guifg=#FF6666
-highlight ALEWarning ctermbg=none
-highlight ALEError ctermbg=none
+let g:ale_sign_warning = '>>'
+let g:ale_sign_error = '>>'
 
 " GitGutter
 let g:gitgutter_sign_added = '∙'
