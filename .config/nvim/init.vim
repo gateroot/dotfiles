@@ -66,27 +66,46 @@ let g:gitgutter_sign_modified_removed = '∙'
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 " lightline
-let g:lightline = {
-		\ 'component': {
-		\   'lineinfo': '⭡ %3l:%-2v',
-		\ },
-		\ 'component_function': {
-		\   'readonly': 'LightlineReadonly',
-		\   'fugitive': 'LightlineFugitive'
-		\ },
-		\ 'separator': { 'left': '⮀', 'right': '⮂' },
-		\ 'subseparator': { 'left': '⮁', 'right': '⮃' }
-		\ }
-	function! LightlineReadonly()
-		return &readonly ? '⭤' : ''
-	endfunction
-	function! LightlineFugitive()
-		if exists('*fugitive#head')
-			let branch = fugitive#head()
-			return branch !=# '' ? '⭠ '.branch : ''
-		endif
-		return ''
-	endfunction
+let g:lightline = {}
+let g:lightline.colorscheme = 'PaperColor'
+let g:lightline.component = {
+    \   'lineinfo': '⭡ %3l:%-2v'
+    \ }
+let g:lightline.component_function = {
+    \   'readonly': 'LightlineReadonly',
+    \   'fugitive': 'LightlineFugitive',
+    \   'filetype': 'MyFiletype',
+    \ }
+let g:lightline.active = {
+    \ 'left': [ [ 'mode', 'paste' ],
+    \           [ 'readonly', 'filename', 'modified' ] ],
+    \ 'right': [ [ 'lineinfo' ],
+    \            [ 'percent' ],
+    \            [ 'fugitive', 'fileencoding', 'filetype' ] ] }
+let g:lightline.inactive = {
+    \ 'left': [ [ 'filename' ] ],
+    \ 'right': [ [ 'lineinfo' ],
+    \            [ 'percent' ],
+    \            ['fugitive'], ] }
+let g:lightline.tabline = {
+    \ 'left': [ [ 'tabs' ] ],
+    \ 'right': [ [ 'close' ] ] }
+let g:lightline.separator = { 'left': '⮀', 'right': '⮂' }
+let g:lightline.subseparator = { 'left': '⮁', 'right': '⮃' }
+
+function! LightlineReadonly()
+    return &readonly ? '⭤' : ''
+endfunction
+function! LightlineFugitive()
+    if exists('*fugitive#head')
+        let branch = fugitive#head()
+        return branch !=# '' ? '⭠ '.branch : ''
+    endif
+    return ''
+endfunction
+function! MyFiletype()
+    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() . ' ' : 'no ft') : ''
+  endfunction
 
 " If you have vim >=8.0 or Neovim >= 0.1.5
 if (has("termguicolors"))
