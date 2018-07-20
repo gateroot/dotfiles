@@ -50,6 +50,8 @@ highlight EndOfBuffer guibg=none
 highlight Error gui=bold
 
 " ALE
+highlight ALEWarning ctermbg=none
+highlight ALEError ctermbg=none
 let g:ale_sign_warning = '>>'
 let g:ale_sign_error = '>>'
 
