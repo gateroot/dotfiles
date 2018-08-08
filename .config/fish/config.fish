@@ -1,3 +1,6 @@
+# .bash_profile
+bass source "$HOME/.bash_profile"
+
 # Google Cloud SDK
 bass source "$HOME/google-cloud-sdk/path.bash.inc"
 bass source "$HOME/google-cloud-sdk/completion.bash.inc"
